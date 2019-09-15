@@ -1,5 +1,5 @@
 # Persuasion for Good 
-A large metadata-rich collection of actual conversations between two people where one is trying to convince the other of donating. This dataset contains 1017 dialogues each with several conversational turns. Additionally, every user has a personality vector associated with them generated through phycological surveys.
+A large metadata-rich collection of online conversations between two people where one participant ("persuader") is trying to convince the other ("persuadee") to donate to a charity. This dataset contains 1017 dialogues, each with several conversational turns. Additionally, every user has a personality vector associated with them generated through psycological surveys.
 
 Distributed together with:
 "Persuasion for Good: Towards a Personalized Persuasive Dialogue System for Social Good" https://arxiv.org/pdf/1906.06725.pdf. Xuewei Wang et al. ACL 2019.
@@ -43,7 +43,7 @@ Users in this dataset are Amazon Turks. For each user, we further provide the fo
 'religion.x'
 'ideology.x\'
 
-Additionally, the metadata includes the amount that the user donated following a particular dialogue.
+Additionally, the metadata includes the final amount that the user donated following a particular dialogue.
 
 ## Utterance-level information
 For each utterance, we provide:
@@ -51,13 +51,13 @@ For each utterance, we provide:
 * id: index of the utterance
 * user: the user who authored the utterance
 * root: index of the conversation root of the utterance
-* reply_to: index of the utterance to which this utterance replies to (None if the utterance is not a reply)
+* reply_to: index of the utterance to which this utterance replies to (None if the utterance is the first utterance in a conversation.)
 * text: textual content of the utterance
 
 Metadata for utterances include:
 
 * dialogue_idx: index of the dialogue from which this utterance occurs
-* role: whether the utterance is spoken by the persuader or persuadee
+* role: whether the utterance is spoken by the persuader ("0") or persuadee ("1")
 * num_turns: The particular turn in which this utterance occurs in the dialogue
 
 ## Conversational-level information
