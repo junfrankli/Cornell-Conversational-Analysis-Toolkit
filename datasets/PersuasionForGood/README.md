@@ -43,7 +43,7 @@ Users in this dataset are Amazon Turks. For each user, we further provide the fo
 'religion.x'
 'ideology.x\'
 
-Additionally, the metadata includes the final amount that the user donated following a particular dialogue.
+Additionally, the metadata includes the final amount that the user donated following a particular dialogue along with the intended donatation that the user specified in a dialogue. 
 
 ## Utterance-level information
 For each utterance, we provide:
@@ -53,6 +53,13 @@ For each utterance, we provide:
 * root: index of the conversation root of the utterance
 * reply_to: index of the utterance to which this utterance replies to (None if the utterance is the first utterance in a conversation.)
 * text: textual content of the utterance
+* er_label_1: first persuasion strategy used by the persuader
+* ee_label_1: first persuasion strategy used by the persuadee
+* er_label_2: second persuasion strategy used by the persuader
+* ee_label_2: second persuasion strategy used by the persuadee
+* neg	: The negative sentiment of the utterance
+* neu : The neutral sentiment of the utterance
+* pos : The positive sentiment of the utterance
 
 Metadata for utterances include:
 
