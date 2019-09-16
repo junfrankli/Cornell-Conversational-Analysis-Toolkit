@@ -8,40 +8,44 @@ Distributed together with:
 Original data: https://gitlab.com/ucdavisnlp/persuasionforgood/tree/master/data
 
 ## User-level information
-Users in this dataset are Amazon Turks. For each user, we further provide the following information as user-level metadata:
+Users in this dataset are Amazon Turks. For each user, the authors provide a 23-dimension characteristic vector based on a pre-task psychological survey. Each of these personality characteristics take on a value from 1 to 6; in addition, demographic info such as age, sex, race, education, marital status, employment, income, religion, and ideology are also included as user-level metadata: 
 
-'extrovert.x'
-'agreeable.x'
-'conscientious.x'
-'neurotic.x'
-'open.x'
-'care.x'
-'fairness.x'
-'loyalty.x'
-'authority.x'
-'purity.x'
-'freedom.x'
-'conform.x'
-'tradition.x'
-'benevolence.x'
-'universalism.x'
-'self_direction.x'
-'stimulation.x'
-'hedonism.x'
-'achievement.x'
-'power.x'
-'security.x'
-'rational.x'
-'intuitive.x'
-'age.x'
-'sex.x'
-'race.x'
-'edu.x'
-'marital.x'
-'employment.x'
-'income.x'
-'religion.x'
-'ideology.x\'
+| Type      |  Type        | Data Type  | Range of Possible Values | Other Notes | 
+| ------------- |:-------------:| :-----:| :----------------------:|  :------------:| 
+| extrovert.x   | Personality | Numerical | {1, 6} |
+| agreeable.x  | Personality  |   Numerical | {1, 6} |
+| conscientious.x | Personality  |    Numerical | {1, 6} |
+| neurotic.x   | Personality | Numerical | {1, 6} |
+| open.x   | Personality  |   Numerical | {1, 6} |
+| care.x | Personality  |    Numerical | {1, 6} |
+| fairness.x   | Personality | Numerical | {1, 6} |
+| loyalty.x   | Personality  |   Numerical | {1, 6} |
+| conscientious.x | Personality  |    Numerical | {1, 6} |
+| authority.x  | Personality | Numerical | {1, 6} |
+| purity.x   | Personality  |   Nuerical | {1, 6} |
+| freedom.x | Personality  |    Numerical | {1, 6} |
+| conform.x | Personality  |    Numerical | {1, 6} |
+| tradition.x   | Personality | Numerical | {1, 6} |
+| benevolence.x  | Personality  |   Numerical | {1, 6} |
+| universalism.x   | Personality | Numerical | {1, 6} |
+| self_direction.x  | Personality  | Numerical | {1, 6} |
+| stimulation.x  | Personality | Numerical | {1, 6} |
+| hedonism.x | Personality  |   Numerical | {1, 6} |
+| achievement.x   | Personality | Numerical | {1, 6} |
+| power.x  | Personality  |   Numerical | {1, 6} |
+| security.x  | Personality | Numerical | {1, 6} |
+| rational.x  | Personality  |   Numerical | {1, 6} |
+| intuitive.x   | Personality | Numerical | {1, 6} |
+| age.x | Demographic |   Numerical | {3, 82} | The age 3 is probably a typo. |
+| sex.x   | Demographic | Categorical | {Male, Female, Other}| 
+| race.x   | Demographic  |   Categorical | {White, Other} |
+| edu.x   | Demographic | Categorical | {Four year college, Less than four-year college, Postgraduate} |
+| marital.x  | Demographic |  Categorical | {Married, Unmarried} |
+| employment.x  | Demographic |   Categorical | {Employed for wages, Other} |
+| income.x  | Demographic | Numerical | {1, 12} | 
+| religion.x  | Demographic  |   Categorical | { Atheist, Catholic, Other religion, Protestant} |
+| ideology.x | Demographic  |   Categorical | {Conservative, Liberal, Moderate} |
+
 
 Additionally, the metadata includes the final amount that the user donated following a particular dialogue along with the intended donatation that the user specified in a dialogue. 
 
