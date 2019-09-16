@@ -22,7 +22,7 @@ Users in this dataset are Amazon Turks. For each user, the authors provide a 23-
 | loyalty.x   | Personality  |   Numerical | {1, 6} |
 | conscientious.x | Personality  |    Numerical | {1, 6} |
 | authority.x  | Personality | Numerical | {1, 6} |
-| purity.x   | Personality  |   Nuerical | {1, 6} |
+| purity.x   | Personality  |   Numerical | {1, 6} |
 | freedom.x | Personality  |    Numerical | {1, 6} |
 | conform.x | Personality  |    Numerical | {1, 6} |
 | tradition.x   | Personality | Numerical | {1, 6} |
