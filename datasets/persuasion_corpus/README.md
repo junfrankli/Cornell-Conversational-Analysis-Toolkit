@@ -10,7 +10,7 @@ Original data: https://gitlab.com/ucdavisnlp/persuasionforgood/tree/master/data
 ## User-level information
 Users in this dataset are Amazon Turks. For each user, the authors provide a 23-dimension characteristic vector based on a pre-task psychological survey. Each of these personality characteristics take on a value from 1 to 6; in addition, demographic info such as age, sex, race, education, marital status, employment, income, religion, and ideology are also included as user-level metadata: 
 
-| Type      |  Type        | Data Type  | Range of Possible Values | Other Notes | 
+| Feature    |  Type        | Data Type  | Range of Possible Values | Other Notes | 
 | ------------- |:-------------:| :-----:| :----------------------:|  :------------:| 
 | extrovert.x   | Personality | Numerical | {1, 6} |
 | agreeable.x  | Personality  |   Numerical | {1, 6} |
@@ -72,7 +72,7 @@ Metadata for utterances include:
 * num_turns: The particular turn in which this utterance occurs in the dialogue
 
 ## Conversational-level information
-Conversations are indexed by the id of the dialogue.
+Conversations are indexed by the id of the dialogue. Conversation metadata now includes donation amount, num of turns, intended donation amount (only available for 300 annotated conversations), and the persuader/persuadee user ids.  
 
 ## Usage
 To download directly with ConvoKit:
